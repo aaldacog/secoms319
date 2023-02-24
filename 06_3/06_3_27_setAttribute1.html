@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id = "list">
+        <li><a  id="p1" href="#prod1.html" class="list_one"> Product Number One  </a></li>
+        <li> Product Number Two  </li> 
+        <li> Product Number Three</li>
+        <li id = "four" class="shoes" style="color:red"> Product Number Four </li>
+    </ul>
+
+    <script>
+        let myLinkFour = document.getElementById("four");
+
+        myLinkFour.setAttribute('style', "color:green; background:yellow; font-size: 25px;"); 
+
+        for (const name of myLinkFour.getAttributeNames()) {
+            const value = myLinkFour.getAttribute(name);
+            console.log(name, value);
+            }
+    </script>
+
+
+
+</body>
+</html>

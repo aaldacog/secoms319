@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pcolor">Color : Web Page</h1>
+
+    <p>Select color from this list :</p>
+    <ul>
+        <li><button id="btnred" onclick="changeFontColor('red')">color : red;</button></li>
+        <li><button id="btnblue" onclick="changeFontColor('blue')">color : blue;</button></li>
+    </ul>
+
+    <script type="application/javascript">
+        function changeFontColor(optColor) {
+            if (optColor === 'red') {
+                let button = document.getElementById("btnred"); 
+                button.style.color = 'red';
+            }
+            if (optColor === 'blue') {
+                let button = document.getElementById("btnblue"); 
+                button.style.color = 'blue';
+            }
+            let p1 = document.getElementById("pcolor"); 
+            p1.setAttribute('style', `color:${optColor};`);
+        }
+    </script>
+</body>
+</html>
