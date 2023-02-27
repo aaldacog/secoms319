@@ -1,0 +1,2 @@
+In Javascript some executions are taken in Synchronous and in Asyinchronous ways.
+When we use callback functions, we are passing a functions as parameter and usually we prefer to prepare its execution Asynchronously.
