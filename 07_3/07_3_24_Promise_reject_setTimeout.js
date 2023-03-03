@@ -9,7 +9,7 @@ function nosleep(t){
         console.log("running timer");
         reject(new Error("Whoops!"));
     }, t);
-    }).catch(error => alert(error.message));
+    });
 }
 
 nosleep(3000);
