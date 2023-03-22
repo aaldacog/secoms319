@@ -1,0 +1,22 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// init React :
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
+
+// Create a function to return a portion of component:
+function Greeting() {
+  const user = {
+    firstName: "Jessica",
+    lastName: "Robles",
+  };
+  return <h1> {JSON.stringify(user)} </h1>;
+}
+
+// render something HTML :
+root.render(
+  <div>
+    <Greeting />
+  </div>
+);
