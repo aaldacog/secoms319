@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-do/client';
+import ReactDOM from 'react-dom/client';
 
 const myElement = (
   <div>
